@@ -8,8 +8,8 @@ const key = {
   uuid: process.env.uuid,
 };
 
-const server = app.listen(3000, () => {
-  console.log("server start: localhost: 3000");
+const server = app.listen(process.env.PORT || 3000, () => {
+  console.log("server start: localhost port", process.env.PORT);
 });
 
 app.get("/api/movie/boxOffice/:apiKey/:type", async (req, res) => {
