@@ -97,8 +97,8 @@ app.get('/api/movie/boxOffice/', (req, res) => {
       res.send(data);
     } else {
       res.send("orderBy type is not matched")
-    };
-  };
+    }
+  }
 });
 
 
